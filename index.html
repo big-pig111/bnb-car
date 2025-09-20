@@ -172,13 +172,13 @@
         <div class="iframe-container">
             <div class="loading" id="loading">
                 <div class="spinner"></div>
-                <div>正在加载 Car Zoom...</div>
+                <div>Loading Bcar...</div>
             </div>
             
             <div class="error-message" id="errorMessage">
-                <h3>加载失败</h3>
-                <p>无法连接到 Car Zoom 网站</p>
-                <button onclick="retryLoad()" class="nav-btn" style="margin-top: 10px;">重试</button>
+                <h3>Load Failed</h3>
+                <p>Unable to connect to Bcar website</p>
+                <button onclick="retryLoad()" class="nav-btn" style="margin-top: 10px;">Retry</button>
             </div>
             
             <iframe 
@@ -220,7 +220,7 @@
             const container = document.querySelector('.container');
             if (!document.fullscreenElement) {
                 container.requestFullscreen().catch(err => {
-                    console.log('无法进入全屏模式:', err);
+                    console.log('Unable to enter fullscreen mode:', err);
                 });
             } else {
                 document.exitFullscreen();
